@@ -10,4 +10,4 @@ main =
     do
     f1
     f2 
-    putStrLN myFunc3
+    putStr myFunc3
