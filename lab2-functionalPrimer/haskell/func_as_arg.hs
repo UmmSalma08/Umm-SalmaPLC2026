@@ -1,5 +1,5 @@
 --create inpFunc
-inpFunc = [1..5] 
+inpFunc = [1..1000] 
 
 --Define applicatorFunc
 applicatorFunc inpFunc s = if s=='s' then sum inpFunc else (sum inpFunc)/5  
