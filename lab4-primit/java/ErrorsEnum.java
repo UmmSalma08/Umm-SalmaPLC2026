@@ -32,7 +32,7 @@ public class ErrorsEnum
         return result;
     }
   
-    private static Result error2Result(Result r)
+    private static Error result2error(Result r)
     {
         Error error = null;
         
@@ -63,7 +63,7 @@ public class ErrorsEnum
         }
         System.out.println();
         
-        Result r = getEnumElement("result", Error.class);
-        System.out.println(r + " results from: " + error2Result(r));
+        Result r = getEnumElement("result", Result.class);
+        System.out.println(r + " results from: " + result2Error(r));
     }
 }
