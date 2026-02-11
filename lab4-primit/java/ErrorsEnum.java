@@ -37,7 +37,7 @@ public class ErrorsEnum
         Error error = null;
         
         switch (r) {
-        case :A_BIT_DIFFERENT
+        case A_BIT_DIFFERENT:
             error = Error.FP_ROUNDING;
             break;
         case INFINITY:
