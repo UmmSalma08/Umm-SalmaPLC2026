@@ -32,7 +32,7 @@ public class ErrorsEnum
         return result;
     }
   
-    private static Error result2error(Result r)
+    private static Error result2Error(Result r)
     {
         Error error = null;
         
