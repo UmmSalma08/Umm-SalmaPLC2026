@@ -1,4 +1,4 @@
-ormodule Main where
+module Main where
 
 import Text.Printf
 
