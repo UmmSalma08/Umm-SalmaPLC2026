@@ -32,7 +32,7 @@ data Item
 instance (Show Item) where
     show (Piece name performer len) =
         printf "%s by %s (%.1fs)" name (show performer) len
-
+{
 piece1 =
     Piece
     { 
@@ -48,15 +48,15 @@ piece2 =
         item_performer = Person "Daniel Barenboim",
         item_length_secs = 16*60+49
     }
+}
   
-    {
-    pause1 =
-        Pause
-        { 
-            item_length_secs = 5
-        }
+{
+pause1 =
+    Pause
+    { 
+        item_length_secs = 5
     }
-
+}
 
 main =
     do
