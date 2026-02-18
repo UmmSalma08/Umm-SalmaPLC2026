@@ -32,6 +32,9 @@ data Item
 instance (Show Item) where
     show (Piece name performer len) =
         printf "%s by %s (%.1fs)" name (show performer) len
+        
+    show(Pause len) =
+        printf "Pause (%.1fs)" len
 
 piece1 =
     Piece
