@@ -49,13 +49,13 @@ piece2 =
         item_length_secs = 16*60+49
     }
   
-{
+
 pause1 =
     Pause
     { 
         item_length_secs = 5
     }
-}
+
 
 main =
     do
