@@ -22,6 +22,11 @@ data Item
             item_performer :: Person,
             item_length_secs :: Float
         }
+        |
+      Pause 
+        {
+           item_length_secs :: Float
+        }
     deriving (Eq)
 
 instance (Show Item) where
@@ -44,13 +49,13 @@ piece2 =
         item_length_secs = 16*60+49
     }
   
-{-
+{
 pause1 =
     Pause
     { 
         item_length_secs = 5
     }
--}
+}
 
 main =
     do
@@ -59,8 +64,8 @@ main =
     putStrLn $ show longerPiece
     putStr "piece1 = "
     putStrLn $ show piece1
---    putStr "pause1 = "
---    putStrLn $ show pause1
+    putStr "pause1 = "
+    putStrLn $ show pause1
 
 (shorterPiece, longerPiece)= sortTwoItems (piece1, piece2) -- TASK
 
