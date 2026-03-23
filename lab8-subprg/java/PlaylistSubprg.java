@@ -237,7 +237,8 @@ public class PlaylistSubprg {
                         System.out.printf("  remaining play time = %.2f \n", remainingLength);
                     }
                 } catch (PlaylistProgress.EndOfPlaylist e1) {
-                        break; // ignore this exception
+                        ; // ignore this exception
                   }
+                break;
     }
 }
