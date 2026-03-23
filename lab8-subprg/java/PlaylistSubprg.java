@@ -230,8 +230,8 @@ public class PlaylistSubprg {
         System.out.println();
 
         PlaylistProgress progress = new PlaylistProgress(playlist1);
-            while (true) { //TASK 1c: Modify this loop to handle the EndOfPlaylist exception
-              try {
+        while (true) { //TASK 1c: Modify this loop to handle the EndOfPlaylist exception
+            try {
                 float remainingLength = progress.getRemainingLength();
                 System.out.printf("Next item = %s \n", progress.getNextItem());
                 //getNextItem() throws a checked exception, but it is uncaught so far
@@ -239,4 +239,6 @@ public class PlaylistSubprg {
               } catch (PlaylistProgress.EndOfPlaylist e) { // Only catching this specific kind of exception
                 break;
               }
-    }
+        }
+}
+}
