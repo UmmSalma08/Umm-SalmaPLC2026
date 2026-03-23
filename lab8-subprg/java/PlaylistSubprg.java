@@ -170,15 +170,14 @@ public class PlaylistSubprg {
     public static void getPlaylistLength_CopyInCopyOutPassing(List<Item> playlist, FloatHolder result,
             FloatHolder resultNoAds) {
         // TASK 2b: complete this method, simulating copy-in/copy-out parameter passing
-
-
-
-
-
-
-
-
-
+         float temp1 = result.x;
+         float temp2 = resultNoAds.x;
+         for (Item item : playlist) {
+           temp1 = temp1 + item.length_secs;
+           if (!(item instanceof Advert)) {
+             temp2 = temp2 + item.length_secs;
+       }
+     }
 
     }
 
