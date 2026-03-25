@@ -82,7 +82,7 @@ public class PlaylistSubprg {
             this(items, 0);
         }
 
-        public Item getNextItem() throws EndOfPlaylist { //Extension Task 3b: Replace with a pure procedure and a pure function
+        /*public Item getNextItem() throws EndOfPlaylist { //Extension Task 3b: Replace with a pure procedure and a pure function
             if (index >= items.size()) {
                 throw new EndOfPlaylist();
             }
@@ -90,7 +90,19 @@ public class PlaylistSubprg {
             index++;
             return result;
         }
+        */
 
+        public Item getCurrentItem throws EndOfPlaylist(){
+            return items.get(index);
+        }
+
+        public void shiftToNextItem() throws EndOfPlaylist{
+            if(index + 1 >= items.size()){
+                throw new EndOfPlaylist();
+            }
+            index++;
+        }
+            
         public class EndOfPlaylist extends Exception {
 
         }
